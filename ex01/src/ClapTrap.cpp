@@ -6,13 +6,13 @@
 /*   By: stopp <stopp@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 15:11:41 by stopp             #+#    #+#             */
-/*   Updated: 2024/11/21 17:50:39 by stopp            ###   ########.fr       */
+/*   Updated: 2024/11/23 18:25:15 by stopp            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/ClapTrap.hpp"
 
-ClapTrap::ClapTrap() : _name("Default"), _HP(100), _energy(50), _AD(20)
+ClapTrap::ClapTrap() : _name("Default"), _HP(10), _energy(10), _AD(0)
 {
 	std::cout << "Default ClapTrap has been created!" << std::endl;
 }

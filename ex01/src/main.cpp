@@ -6,7 +6,7 @@
 /*   By: stopp <stopp@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 16:03:24 by stopp             #+#    #+#             */
-/*   Updated: 2024/11/21 17:58:19 by stopp            ###   ########.fr       */
+/*   Updated: 2024/11/23 19:46:04 by stopp            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,9 @@ int	main(void)
 	ClapTrap	Karl("Karl");
 	ClapTrap	Gustav("Gustav");
 	ClapTrap	Karl_Copy(Karl);
-	ScavTrap	test;
+	ScavTrap	ScavTrap("ScavTrap");
+
+	std::cout << std::endl;
 
 	Karl.attack(Karl_Copy.getname());
 	Karl_Copy.takeDamage(Karl.getAD());
@@ -35,15 +37,17 @@ int	main(void)
 
 	std::cout << std::endl;
 
-	Karl_Copy.set_AD(10);
-	Karl_Copy.attack(Karl.getname());
-	Karl.takeDamage(Karl_Copy.getAD());
+	ScavTrap.attack(Karl.getname());
+	Karl.takeDamage(ScavTrap.getAD());
 
 	std::cout << std::endl;
 
 	Karl.beRepaired(1);
 	Karl.attack(Gustav.getname());
-	Karl.takeDamage(Gustav.getAD());
-	test.attack(Karl.getname());
+
+	ScavTrap.guardGate();
+
+	std::cout << std::endl;
+
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: stopp <stopp@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 14:51:34 by stopp             #+#    #+#             */
-/*   Updated: 2024/11/20 17:24:08 by stopp            ###   ########.fr       */
+/*   Updated: 2024/11/23 18:38:48 by stopp            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 class	ClapTrap
 {
-	private:
+	protected:
 		std::string	_name;
 		int			_HP;
 		int			_energy;

@@ -6,7 +6,7 @@
 #    By: stopp <stopp@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/13 17:55:12 by stopp             #+#    #+#              #
-#    Updated: 2024/11/20 14:53:14 by stopp            ###   ########.fr        #
+#    Updated: 2024/11/23 18:34:25 by stopp            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ CFLAGS := -Wall -Wextra -Werror -std=c++17
 # Directories and Files
 OBJDIR := obj
 SRC :=	src/ClapTrap.cpp \
+		src/ScavTrap.cpp \
 		src/main.cpp \
 
 OBJ := $(SRC:%.cpp=$(OBJDIR)/%.o)
