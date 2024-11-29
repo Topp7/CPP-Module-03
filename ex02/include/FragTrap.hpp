@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stopp <stopp@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:27:39 by stopp             #+#    #+#             */
-/*   Updated: 2024/11/29 15:50:36 by stopp            ###   ########.fr       */
+/*   Updated: 2024/11/29 15:23:05 by stopp            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,14 @@
 
 #include "ClapTrap.hpp"
 
-class ScavTrap : public ClapTrap
+class FragTrap : public ClapTrap
 {
-	protected:
-		bool	_guarding;
-
 	public:
-		ScavTrap();
-		ScavTrap(const std::string name);
-		ScavTrap(const ScavTrap &copy);
-		~ScavTrap();
-		ScavTrap &operator = (const ScavTrap &copy);
+		FragTrap();
+		FragTrap(const std::string name);
+		FragTrap(const FragTrap &copy);
+		~FragTrap();
+		FragTrap &operator = (const FragTrap &copy);
 
-		void	attack(const std::string &target);
-		void	guardGate();
-		bool	guard_status()const;
+		void	highFivesGuys(void);
 };

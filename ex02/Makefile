@@ -6,12 +6,12 @@
 #    By: stopp <stopp@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/13 17:55:12 by stopp             #+#    #+#              #
-#    Updated: 2024/11/29 15:20:06 by stopp            ###   ########.fr        #
+#    Updated: 2024/11/29 15:36:55 by stopp            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Project name
-NAME := ScavTrap
+NAME := FragTrap
 
 # Define ANSI color codes
 GREEN := \033[0;32m
@@ -27,6 +27,7 @@ CFLAGS := -Wall -Wextra -Werror -std=c++17
 OBJDIR := obj
 SRC :=	src/ClapTrap.cpp \
 		src/ScavTrap.cpp \
+		src/FragTrap.cpp \
 		src/main.cpp \
 
 OBJ := $(SRC:%.cpp=$(OBJDIR)/%.o)
