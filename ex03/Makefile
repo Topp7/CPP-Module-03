@@ -6,12 +6,12 @@
 #    By: stopp <stopp@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/13 17:55:12 by stopp             #+#    #+#              #
-#    Updated: 2024/11/29 19:18:48 by stopp            ###   ########.fr        #
+#    Updated: 2024/11/30 16:43:09 by stopp            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Project name
-NAME := FragTrap
+NAME := DiamondTrap
 
 # Define ANSI color codes
 GREEN := \033[0;32m
